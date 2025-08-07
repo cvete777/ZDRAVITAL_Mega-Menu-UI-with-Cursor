@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Wellness E-commerce - Mega Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span>HealthWell</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Beneficial Ingredients</a>
+                    </li>
+                    <li class="nav-item nav-item-active">
+                        <a href="#" class="nav-link" id="products-link">Products</a>
+                        <!-- Mega Menu Dropdown -->
+                        <div class="mega-menu" id="mega-menu">
+                            <div class="mega-menu-content">
+                                <!-- Left Panel - Category Accordion -->
+                                <div class="left-panel">
+                                    <div class="category-list">
+                                        <div class="category-item active" data-category="symptom">
+                                            <span class="category-label">By Symptom</span>
+                                            <svg class="chevron-icon down" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="category-item" data-category="condition">
+                                            <span class="category-label">By Condition</span>
+                                            <svg class="chevron-icon right" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="category-item" data-category="ingredient">
+                                            <span class="category-label">By Ingredient</span>
+                                            <svg class="chevron-icon right" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="category-item" data-category="brand">
+                                            <span class="category-label">By Brand</span>
+                                            <svg class="chevron-icon right" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right Panel - Content Display -->
+                                <div class="right-panel">
+                                    <!-- Symptom Filters -->
+                                    <div class="symptom-filters">
+                                        <div class="filter-item active">Nausea</div>
+                                        <div class="filter-item">Headache</div>
+                                        <div class="filter-item">Sleep</div>
+                                    </div>
+
+                                    <!-- Product Grid -->
+                                    <div class="product-grid">
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="https://via.placeholder.com/180x140/e8f5e8/4a9f4a?text=Ginger+Capsules" alt="Ginger Capsules">
+                                            </div>
+                                            <h3 class="product-name">Ginger Capsules</h3>
+                                            <p class="product-price">$24.99</p>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="https://via.placeholder.com/180x140/e8f5e8/4a9f4a?text=Peppermint+Oil" alt="Peppermint Oil">
+                                            </div>
+                                            <h3 class="product-name">Peppermint Oil</h3>
+                                            <p class="product-price">$18.99</p>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="https://via.placeholder.com/180x140/e8f5e8/4a9f4a?text=Anti-Nausea+Tea" alt="Anti-Nausea Tea">
+                                            </div>
+                                            <h3 class="product-name">Anti-Nausea Tea</h3>
+                                            <p class="product-price">$16.50</p>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="https://via.placeholder.com/180x140/e8f5e8/4a9f4a?text=Motion+Sickness+Relief" alt="Motion Sickness Relief">
+                                            </div>
+                                            <h3 class="product-name">Motion Sickness Relief</h3>
+                                            <p class="product-price">$22.99</p>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="https://via.placeholder.com/180x140/e8f5e8/4a9f4a?text=Digestive+Support" alt="Digestive Support">
+                                            </div>
+                                            <h3 class="product-name">Digestive Support</h3>
+                                            <p class="product-price">$29.99</p>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="https://via.placeholder.com/180x140/e8f5e8/4a9f4a?text=Nausea+Patches" alt="Nausea Patches">
+                                            </div>
+                                            <h3 class="product-name">Nausea Patches</h3>
+                                            <p class="product-price">$14.99</p>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="https://via.placeholder.com/180x140/e8f5e8/4a9f4a?text=Ginger+Chews" alt="Ginger Chews">
+                                            </div>
+                                            <h3 class="product-name">Ginger Chews</h3>
+                                            <p class="product-price">$12.99</p>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-image">
+                                                <img src="https://via.placeholder.com/180x140/e8f5e8/4a9f4a?text=Herbal+Remedy" alt="Herbal Remedy">
+                                            </div>
+                                            <h3 class="product-name">Herbal Remedy</h3>
+                                            <p class="product-price">$26.99</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Call to Action -->
+                                    <div class="cta-section">
+                                        <button class="cta-button">See All Products for Nausea</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="hero-section">
+                <h1>Welcome to HealthWell</h1>
+                <p>Your trusted source for natural health and wellness products</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
